@@ -380,7 +380,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                   value={item.label}
                   onSelect={() => {
                     setPaletteOpen(false);
-                    navigate({ to: item.to });
+                    navigate({ to: item.to as never });
                   }}
                 >
                   <item.icon className="size-4" />
